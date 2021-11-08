@@ -2,9 +2,9 @@
   export let name: string
 
   import { io, Socket } from 'socket.io-client'
-  const socket: Socket = io('localhost:3000')
+  const socket: Socket = io('http://localhost:3000')
   socket.on('connect', () => {
-    console.log(socket.id)
+    console.log(socket)
   })
 </script>
 
